@@ -8,9 +8,9 @@
 #define LED_SOIL_GREEN_PIN 19
 
 // Set Value For Blynk
-#define BLYNK_TEMPLATE_ID "TMPL6iG1K6bo1"
+#define BLYNK_TEMPLATE_ID "TMPLxxxxxxx"
 #define BLYNK_TEMPLATE_NAME "SmartPlantCare"
-#define BLYNK_AUTH_TOKEN "BxNAr5_6HwoA-Y0HM-c1Djly_SxOH7-r"
+#define BLYNK_AUTH_TOKEN "YOUR_TOKEN"
 
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -22,8 +22,8 @@ int lastMoisture = -1; // ตัวแปรสำหรับเช็คค่
 int lastMoistureState = -1; // ตัวแปรสำหรับเช็คค่าความเปลี่ยนแปลงของ Soil Moisture Sensor ค่าสถานะของดิน
 int lastLDR = -1; // ตัวแปรสำหรับเช็คค่าความเปลี่ยนแปลงของ LDR Sensor
 
-char ssid[] = "Mod_wifi";
-char pass[] = "88888888";
+char ssid[] = "SSID_WIFI";
+char pass[] = "PASS_WIFI";
 
 void sendSensorData(){
   int moistureAnalog = analogRead(SOIL_ANALOG_PIN); // อ่านค่าจากขา SOIL_ANALOG_PIN ซืึ่งเป็นค่า analog
